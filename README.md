@@ -9,6 +9,8 @@ NumPy is used for array arithmetic only; every component of the network is
 derived and implemented by hand. The objective was to verify each piece
 directly rather than rely on a framework.
 
+![demo](demo.gif)
+
 ## Architecture
 
 ```

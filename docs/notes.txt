@@ -1,0 +1,25 @@
+# Neural Network — Architecture Spec
+
+## Structure
+input (784) → hidden (64, ReLU) → output (10, softmax)
+
+## Parameters
+- W1: (64, 784)
+- b1: (64)
+- W2: (10, 64)
+- b2: (10)
+
+## Functions
+- Hidden activation: ReLU
+- Output activation: softmax
+- Loss: cross-entropy
+
+## Training
+- Optimizer: plain SGD — `param -= learning_rate * gradient`
+- Batch size: 1 (one example at a time)
+- Weight init: He — random × √(2 / fan_in)
+
+## Data
+- Input: 28×28 image flattened to 784-vector
+- Pixels normalized to 0–1
+- 10 output classes (digits 0–9)
